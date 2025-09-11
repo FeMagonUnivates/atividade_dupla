@@ -128,3 +128,4 @@ const estilos = StyleSheet.create({
         fontSize: 30
     }
 })
+
