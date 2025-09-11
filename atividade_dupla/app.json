@@ -1,0 +1,8 @@
+{
+  "name": "atividade_dupla",
+  "slug": "atividade_dupla",
+  "plugins": [
+    "expo-router"
+  ],
+  "scheme": "telas_e_abas"
+}
