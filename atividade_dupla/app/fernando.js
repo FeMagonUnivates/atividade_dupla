@@ -5,8 +5,8 @@ import { View, Text, Button, SafeAreaView, StyleSheet } from "react-native";
 export default function Index() {
 
     const [resultado, setResultado] = useState(0)
-    cosnt[num1, setNum1] = useState(0)
-    cosnt[num2, setNum2] = useState(0)
+    const[num1, setNum1] = useState(0)
+    const[num2, setNum2] = useState(0)
 
     function somar(n1, n2) {
         const n1Convertido = parseFloat(n1);
