@@ -9,7 +9,7 @@ export default function Efeito() {
 
     function handleEffect() {
         setShowEffect(true);
-        setTimeout(() => setShowEffect(false), 1000); 
+        setTimeout(() => setShowEffect(false), 1000);
     }
 
     function handleInvertColors() {
@@ -27,9 +27,9 @@ export default function Efeito() {
                 {showEffect && <Text style={{ color: 'blue', fontSize: 50 }}>Pimba!</Text>}
                 <Button title="Inverter cores" onPress={handleInvertColors} />
                 <Button title="Alert" onPress={() => ToastAndroid.show('Alerta de Batata!', ToastAndroid.SHORT)} />
-                    <Button title="Voltar" onPress={() => router.back()} />
+                <Button title="Voltar" onPress={() => router.back()} />
                 <Button title="Ir para Home" onPress={() => router.push('/')} />
-            </View> 
+            </View>
         </SafeAreaView>
     );
 }
