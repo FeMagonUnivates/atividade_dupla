@@ -1,12 +1,12 @@
 import { router, Link } from "expo-router";
 import { useState } from "react";
-import { View, Text, Button, SafeAreaView, StyleSheet } from "react-native";
+import { View, Text, Button, SafeAreaView, StyleSheet, TextInput } from "react-native";
 
 export default function Index() {
 
     const [resultado, setResultado] = useState(0)
-    cosnt[num1, setNum1] = useState(0)
-    cosnt[num2, setNum2] = useState(0)
+    const [num1, setNum1] = useState(0)
+    const [num2, setNum2] = useState(0)
 
     function somar(n1, n2) {
         const n1Convertido = parseFloat(n1);
@@ -23,17 +23,17 @@ export default function Index() {
         <SafeAreaView>
             <View>
                 <Text style={estilos.titulo}>Página do Fernando</Text>
-                <Text> Tomara que dê certo</Text>
+                <Text>Tomara que dê certo</Text>
             </View>
 
             <View style={estilos.doisBotoes}>
                 <View style={[estilos.botao, { backgroundColor: '#6795ffff' }]}>
-                    <Link href="/index" asChild>
+                    <Link href="/" asChild>
                         <Button title="Voltar para Index" color={'white'}></Button>
                     </Link>
                 </View>
                 <View style={[estilos.botao, { backgroundColor: '#4f8a61ff' }]}>
-                    <Link href="/guilherme">
+                    <Link href="/guilherme" asChild>
                         <Button title="Ir para Guilherme" color={'white'}></Button>
                     </Link>
                 </View>
