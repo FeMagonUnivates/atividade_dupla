@@ -1,6 +1,7 @@
 import { router, Link } from "expo-router";
 import { useState } from "react";
-import { View, Text, Button, SafeAreaView, StyleSheet, TextInput } from "react-native";
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { View, Text, Button, StyleSheet, TextInput } from "react-native";
 
 export default function Index() {
 
